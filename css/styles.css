@@ -102,6 +102,10 @@ address {
 
 /*ALL NAVIGATION AND OPTION LIST in index and portfolio */
 
+.nav-list-container-list {
+    
+}
+
 /*Magin to Separate  Studio, Portfolio, Contacts */
 .nav-list-container .item:not(:last-child),
 .cta-container .item:not(:last-child){
@@ -178,7 +182,7 @@ address {
 }
 
 /* HERO SECTION */
-.hero {
+/* .hero {
     background-color:var(--navy-blue);
     font-family: 'Roboto',sans-serif ;
     line-height: 1.14;
@@ -193,7 +197,7 @@ address {
     background-position: center;
     background-size: cover;
   
-}
+} */
 
 .main-heading {
     color: var(--white);
