@@ -41,6 +41,7 @@ p {
     display: block;
     max-width: 100%;
     height: auto;
+    
  }
 
 .list{
@@ -50,7 +51,7 @@ p {
 }
 
 .link{
-    text-decoration:none;
+     text-decoration:none;
 }
 
 address {
@@ -247,6 +248,7 @@ address {
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+/*modal is always hidden until you click on Order Services*/
 .backdrop.is-hidden {
     opacity: 0;
     pointer-events: none;
@@ -403,6 +405,7 @@ address {
     background-color: var(--iris);
     fill: var(--white);
     border-radius: 40px;
+    margin-bottom: 20px;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     background-color: 250ms cubic-bezier(0.4, 0, 0.2, 1);
     border-color: 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -411,6 +414,9 @@ address {
 .team-social .link:hover,
 .team-social .link:focus {
     background-color: var(--Green);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    background-color: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    border-color: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .team-social .item {
@@ -467,22 +473,17 @@ address {
 .customers .timer:focus {
     fill: var(--ocean);
     border-color: var(--ocean);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    background-color: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    border-color: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /*FOR PORTFOLIO BUTTONS  ETC.*/
 .main-div-container {
     display: flex;
-    flex-direction: row;
     gap: 24px;
-    flex-basis: calc((100% - 72px) / 3);
     flex-wrap: wrap;
     padding-bottom: 120px;
-}
-
-.card-container {
-margin: 0;
-padding: 0;
-
 }
 
 .card {
@@ -492,6 +493,33 @@ padding: 0;
     width: 320px;
     gap: 10px;
 } 
+
+/* this section is for the text cover of each image*/
+.image-cover {
+    position: relative;
+    overflow: hidden;
+    height: 300px;
+}
+
+.image-cover-text {
+    position: absolute;
+    top: 0;
+    height: 75%;
+    width: 81%;
+    padding: 40px 32px;
+    background-color: var(--iris);
+    color: var(--cloud);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.32px;
+    transform: translateY(100%);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.pics-link:hover .image-cover-text {
+    transform: translateY(0);
+}
 
 .buttons.filter{
     background-color: var(--cornflower);
